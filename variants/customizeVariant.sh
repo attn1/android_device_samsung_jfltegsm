@@ -23,6 +23,7 @@ if [ $? = 0 ];
        sed -i 's|ro.build.fingerprint=custom|ro.build.fingerprint=samsung/jflteuc/jflteatt:4.2.2/JDQ39/I337UCUAMDL:user/release-keys|g' /system/build.prop 
        sed -i 's|ro.build.description=custom|ro.build.description=flteuc-user 4.2.2 JDQ39 I337UCUAMDL release-keys|g' /system/build.prop
        sed -i 's|SGS4ALL|SGH-I337|g' /system/build.prop
+       sed -i 's|jfltegsm|jflteatt|g' /system/build.prop
 fi
 
 
@@ -33,6 +34,7 @@ if [ $? = 0 ];
        sed -i 's|ro.build.fingerprint=custom|ro.build.fingerprint=samsung/jfltetmo/jfltetmo:4.2.2/JDQ39/M919UVUAMDB:user/release-keys|g' /system/build.prop 
        sed -i 's|ro.build.description=custom|ro.build.description=jfltetmo-user 4.2.2 JDQ39 M919UVUAMDB release-keys|g' /system/build.prop
        sed -i 's|SGS4ALL|SGH-M919|g' /system/build.prop
+       sed -i 's|jfltegsm|jfltetmo|g' /system/build.prop
 fi
 
 #can
@@ -42,6 +44,7 @@ if [ $? = 0 ];
        sed -i 's|ro.build.fingerprint=custom|ro.build.fingerprint=samsung/jfltevl/jfltecan:4.2.2/JDQ39/I337MVLUAMDJ:user/release-keys|g' /system/build.prop 
        sed -i 's|ro.build.description=custom|ro.build.description=jfltevl-user 4.2.2 JDQ39 I337MVLUAMDJ release-keys|g' /system/build.prop
        sed -i 's|SGS4ALL|SGH-I337M|g' /system/build.prop
+       sed -i 's|jfltegsm|jfltecan|g' /system/build.prop
 fi
 
 #xx
@@ -51,6 +54,7 @@ if [ $? = 0 ];
        sed -i 's|ro.build.fingerprint=custom|ro.build.fingerprint=samsung/jfltexx/jflte:4.2.2/JDQ39/I9505XXUAMDE:user/release-keys|g' /system/build.prop 
        sed -i 's|ro.build.description=custom|ro.build.description=jfltexx-user 4.2.2 JDQ39 I9505XXUAMDE release-keys|g' /system/build.prop
        sed -i 's|SGS4ALL|GT-I9505|g' /system/build.prop
+       sed -i 's|jfltegsm|jfltexx|g' /system/build.prop
 fi
 
 awk '!/#build.prop.custom/' /system/build.prop > /system/build.temp && mv /system/build.temp /system/build.prop
